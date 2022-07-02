@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Fragments.LoginFragment">
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Email"
+        android:text="asdf@gmail.com"
+        android:singleLine="true"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="5dp"
+        android:background="@color/black" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="password"
+        android:singleLine="true"
+        android:text="12345"
+        android:background="@android:color/transparent"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_margin="5dp"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/tv_regiternow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Register Now"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+<!--    <com.nipunbirla.boxloader.BoxLoaderView-->
+<!--        android:id="@+id/progress"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        app:strokeColor="#995876"-->
+<!--        app:loaderColor="#C67890"-->
+<!--        app:strokeWidth="20"-->
+<!--        app:speed="10"/>-->
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progress"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:mpb_progressStyle="horizontal"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal" />
+</LinearLayout>
